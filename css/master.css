@@ -1,0 +1,517 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Start Component */
+
+section {
+  padding-top: 70px;
+}
+section h2 {
+  text-align: center;
+  color: #8b0110;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+section .devider {
+  margin-top: 30px;
+  text-align: center;
+}
+
+section .devider i {
+  color: #cccccc;
+  font-size: 17px;
+}
+
+section .devider::before,
+section .devider::after {
+  content: "______________________";
+  color: #e6e8ea;
+  position: relative;
+  bottom: 6px;
+}
+
+section p {
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 18px;
+  color: #5b646e;
+}
+
+nav {
+  background-color: rgba(16, 22, 54, 0.2);
+  z-index: -1;
+}
+
+/* End  Component*/
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #8b0110 !important;
+  transition: background-color 200ms linear;
+}
+
+.sticky .color {
+  background-color: rgb(139, 1, 16);
+}
+
+.navbar-collapse .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-collapse .navbar-nav .nav-link:hover {
+  transition: 0.5s;
+}
+
+/* Start header */
+
+.carousel-caption h5 {
+  font-size: 40px;
+}
+
+.carousel-caption .txtbold {
+  font-weight: 900;
+}
+
+.carousel-caption .txt-green {
+  color: #0feb9e;
+}
+
+.carousel-caption p:before,
+.carousel-caption p:after {
+  color: #0feb9e;
+  content: "___";
+  position: relative;
+  top: -8px;
+  margin: 10px;
+}
+
+.carousel-caption i {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  opacity: 0.3;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.carousel-caption i:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* End header */
+
+/* Start services */
+.services {
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  background: #f4f7f9;
+  padding: 60px;
+}
+
+.services .container {
+  text-align: center;
+  margin-top: 30px;
+  animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
+
+.services .container i {
+  font-size: 25px;
+  border: 1px solid #8b0110;
+  border-radius: 50%;
+  color: #8b0110;
+  float: left;
+  padding: 20px;
+  margin-top: -10px;
+}
+
+.services .container h3 {
+  color: #062033;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* End services */
+
+/* Start About Us */
+.about {
+  padding: 70px;
+  animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
+
+/* End about us */
+
+/* Start OUR GALLERY */
+
+.gallery .shuffle {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.gallery .shuffle li {
+  padding: 10px;
+  margin: 10px;
+  list-style: none;
+}
+
+.gallery .shuffle li.active {
+  background-color: #8b0110;
+  color: white;
+  border-radius: 10px;
+}
+
+.gallery .shuffle li:hover {
+  background-color: #8b0110;
+  color: white;
+  border-radius: 10px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.gallery .imgs-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.gallery .col,
+.gallery .row {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery .imgs-container .box {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery .imgs-container .box:hover .caption {
+  bottom: 0;
+  animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
+
+.gallery .imgs-container .box:hover img {
+  opacity: 0.7;
+  /* transform: rotate(3deg) scale(1.1); */
+}
+
+.gallery .imgs-container .box img {
+  max-width: 100%;
+  transition: 0.5s;
+}
+
+.gallery .imgs-container .box .caption {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  background-color: #8b0110;
+  transition: 0.5s;
+  bottom: -100%;
+  text-align: center;
+}
+
+.gallery .imgs-container .box .caption h4,
+.gallery .imgs-container .box .caption p {
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+/* End OUR GALLERY */
+
+/* Start fun-facts */
+.fun-facts {
+  background-image: url(../images/city.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(6, 32, 51, 0.8);
+  background-attachment: fixed !important;
+  background-position: center center;
+  background-size: cover;
+  padding: 0;
+}
+
+.fun-facts .container {
+  margin-top: 50px;
+}
+
+.fun-facts h2 {
+  color: #fff;
+  position: relative;
+}
+
+.fun-facts .devider i {
+  color: #fff;
+  font-size: 17px;
+  position: relative;
+}
+
+.fun-facts .devider::before,
+.fun-facts .devider::after {
+  content: "______________________";
+  color: #fff;
+  position: relative;
+  bottom: 6px;
+}
+
+.fun-facts .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(6, 32, 51, 0.8);
+  padding: 70px 0;
+}
+
+.fun-facts .container .box {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.fun-facts .container .box i {
+  border: 1px solid #fff;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 30px;
+  color: #fff;
+  font-size: 50px;
+}
+
+.fun-facts .container .box span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 35%;
+  text-align: center;
+  color: #fff;
+}
+
+.fun-facts .container .box .number {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+.fun-facts .container .box p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+/* End fun-facts */
+
+/* Start CONTACT US */
+
+.contact-data .our-contact h2 {
+  color: #062033;
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.contact-data .our-contact p {
+  font-weight: normal;
+  margin: auto;
+  text-align: left;
+}
+
+.contact-data .form {
+  text-align: left;
+}
+
+.contact-data .form h2 {
+  color: #062033;
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.contact-data .form input,
+.contact-data .form textarea {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ddd;
+  width: 40%;
+  height: 15%;
+  margin-right: 20px;
+}
+.contact-data .form textarea {
+  height: 20%;
+  margin-top: 20px;
+  width: 85%;
+}
+
+.contact-data .form button {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-top: 15px;
+  margin-left: 70%;
+  cursor: pointer;
+}
+
+/* End CONTACT US */
+
+/* Start map */
+.map {
+  margin-top: -10px;
+  animation: fadeOut; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
+/* End map */
+
+/* Start Footer */
+.footer {
+  background-color: #8b0110;
+  /* height: 500px; */
+  color: #fff;
+  animation: slideInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
+
+.footer .row p {
+  color: #fff;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.footer .col input {
+  background-color: transparent;
+  border: 2px solid #fff;
+  outline: none;
+}
+
+/*  */
+.inputContainer i {
+  position: absolute;
+}
+.inputContainer {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.icon {
+  padding: 15px;
+  color: #fff;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+.Field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer .container .row .links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .container .row .links a {
+  text-transform: none;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.footer .container .row .links a:hover {
+  color: #000;
+  transition: 0.7s;
+}
+
+.copyright {
+  color: #fff;
+  margin-top: 50px;
+  font-weight: normal;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+/* End Footer */
+
+.back-top {
+  position: fixed;
+  bottom: 20px;
+  right: -30px;
+  background-color: #8b0110;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.show {
+  right: 10px;
+}
+
+/* Media  */
+/* Tablet */
+@media (min-width: 768px) {
+  /* .carousel-caption h5 {
+    font-size: 25px;
+  } */
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .carousel-caption h5 {
+    font-size: 25px;
+  }
+
+  .gallery .imgs-container .box .caption h4,
+  .gallery .imgs-container .box .caption p {
+    font-weight: normal;
+    margin-bottom: -9px;
+    color: #ddd;
+  }
+}

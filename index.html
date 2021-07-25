@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sedia</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- FontAwsome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+  </head>
+  <body>
+    <!-- Start Nav -->
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top sticky">
+      <a class="navbar-brand" href="#"
+        ><img src="images/project.png" alt="Logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#Home"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About-Us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- End Nav -->
+    <!-- Start Header Image -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+      data-interval="5000"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="images/banner.jpg"
+            alt="First slide"
+          />
+          <div class="carousel-caption d-none d-md-block d-sm-block">
+            <h5>
+              Sedia <span class="txtbold">Furniture</span>! <br /><span
+                class="txt-green"
+                >/creative</span
+              >
+              Living Room.
+            </h5>
+            <p>We are a team of professionals</p>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="images/banner1.jpg"
+            alt="Second slide"
+          />
+          <div class="carousel-caption d-none d-md-block d-sm-block">
+            <h5>
+              Sedia <span>Furniture</span>! <br />
+              <span class="txt-green">/creative</span> Living Room.
+            </h5>
+            <p>We are a team of professionals</p>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- End Header Image -->
+
+    <!-- Start Section OUR SERVICES -->
+    <section class="services" id="Services">
+      <h2>OUR SERVICES</h2>
+      <div class="devider">
+        <i class="far fa-heart"></i>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <i class="fas fa-home"></i>
+            <h3>Living Room</h3>
+          </div>
+          <div class="col">
+            <i class="fas fa-home"></i>
+            <h3>Bed Room</h3>
+          </div>
+          <div class="col-3">
+            <i class="fas fa-home"></i>
+            <h3>Dining Room</h3>
+          </div>
+          <div class="col-3">
+            <i class="fas fa-home"></i>
+            <h3>Kidz Room</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section OUR SERVICES -->
+
+    <!-- Start Section OUR GALLERY -->
+    <section class="gallery" id="Gallery">
+      <div class="container">
+        <h2>OUR GALLERY</h2>
+        <div class="devider">
+          <i class="far fa-heart"></i>
+        </div>
+        <p>
+          We are making furniture, high professionalism in order to satisfy
+          customer concerns us because the presence and professional furniture
+          We support the customer with the latest modern designs.
+        </p>
+      </div>
+
+      <ul class="shuffle">
+        <li class="active list" data-filter="All">All</li>
+        <li class="list" data-filter="BedRoom">Bed Room</li>
+        <li class="list" data-filter="DiningRoom">Dining Room</li>
+        <li class="list" data-filter="DressingRoom">Dressing Room</li>
+        <li class="list" data-filter="KidzRoom">Kidz Room</li>
+      </ul>
+
+      <div class="imgs-container">
+        <div class="row">
+          <div class="item-box box col Bed-Room BedRoom">
+            <img src="images/item-1.jpg" alt="" />
+            <div class="caption">
+              <h4>Sedia Furniture</h4>
+              <p>Bed Room</p>
+            </div>
+          </div>
+          <div class="item-box box col Dining-Room DiningRoom">
+            <img src="images/item-2.jpg" alt="" />
+            <div class="caption">
+              <h4>Sedia Furniture</h4>
+              <p>Dining Room</p>
+            </div>
+          </div>
+          <div class="item-box box col Bed-Room BedRoom">
+            <img src="images/item-3.jpg" alt="" />
+            <div class="caption">
+              <h4>Sedia Furniture</h4>
+              <p>Bed Room</p>
+            </div>
+          </div>
+          <div class="item-box box col Dining-Room DiningRoom">
+            <img src="images/item-4.jpg" alt="" />
+            <div class="caption">
+              <h4>Sedia Furniture</h4>
+              <p>Dining Room</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="item-box box col Bed-Room BedRoom">
+            <img src="images/item-5.jpg" alt="" />
+            <div class="caption">
+              <h4>Sedia Furniture</h4>
+              <p>Bed Room</p>
+            </div>
+          </div>
+          <div class="item-box box col Dressing-Room DressingRoom">
+            <img src="images/item-6.jpg" alt="" />
+            <div class="caption">
+              <h4>Sedia Furniture</h4>
+              <p>Dressing Room</p>
+            </div>
+          </div>
+          <div class="item-box box col Kidz-Room KidzRoom">
+            <img src="images/item-7.jpg" alt="" />
+            <div class="caption">
+              <h4>Sedia Furniture</h4>
+              <p>Kidz Room</p>
+            </div>
+          </div>
+          <div class="item-box box col Dressing-Room DressingRoom">
+            <img src="images/item-8.jpg" alt="" />
+            <div class="caption">
+              <h4>Sedia Furniture</h4>
+              <p>Dressing Room</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section OUR GALLERY -->
+
+    <!-- Start Section About Us -->
+    <section class="about" id="About-Us">
+      <h2>about us</h2>
+      <div class="devider">
+        <i class="far fa-heart"></i>
+      </div>
+      <div class="all-about">
+        <p>
+          Sedia Furniture , is manufacturer of fine classic and contemporary
+          furniture to the most established and innovative italian and european
+          furniture designers with combination of exceptional quality , unique
+          finishes and unparalleled customer services.
+        </p>
+        <div class="devider">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <div class="all-about">
+        <p>
+          our vision for Sedia Furniture is , to be pioneer in providing a
+          complete solution in all design areas of residential and commercial
+          projects we are providing the highest design quality in all aspects of
+          furniture and finishing.
+        </p>
+        <div class="devider">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <div class="all-about">
+        <p>
+          each piece produced by Sedia Furniture has been carefully thought out
+          and designed with the care of an individual piece of sculpture.
+        </p>
+      </div>
+    </section>
+    <!-- End Section About Us -->
+
+    <!-- Start SomeFunFacts -->
+    <section class="fun-facts">
+      <div class="container">
+        <div class="overlay"></div>
+        <h2>Some Fun Facts</h2>
+        <div class="devider">
+          <i class="far fa-heart"></i>
+        </div>
+        <div class="row">
+          <div class="box col-md-3 col-sm-6 col-xs-12">
+            <i class="far fa-clock"></i>
+            <div class="number count" data-target="12">12</div>
+            <p>HOURS OF WORK IN DAY</p>
+          </div>
+          <div class="box col-md-3 col-sm-6 col-xs-12">
+            <i class="fa fa-users"></i>
+            <span>More Than</span>
+            <div class="number count" data-target="500">0</div>
+            <p>SATISFIED CLIENTS</p>
+          </div>
+          <div class="box col-md-3 col-sm-6 col-xs-12">
+            <i class="fa fa-rocket"></i>
+            <span>More Than</span>
+            <div class="number count" data-target="850">0</div>
+            <p>ROOMS DELIVERED</p>
+          </div>
+          <div class="box col-md-3 col-sm-6 col-xs-12">
+            <i class="far fa-clock"></i>
+            <div class="number count" data-target="2015">0</div>
+            <p>SINCE</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End SomeFunFacts -->
+
+    <section class="contact-us" id="Contact">
+      <div class="container">
+        <h2>CONTACT US</h2>
+        <div class="devider">
+          <i class="far fa-heart"></i>
+        </div>
+        <p>
+          We support the client in the course of the contract and after delivery
+          and at any time within 24 hours .. E-mail us at any time and we will
+          reply as soon as.
+        </p>
+        <div class="contact-data">
+          <div class="row">
+            <div class="our-contact col-lg-3">
+              <h2>Our Contact</h2>
+              <p>23 El Nasr st, Cairo, Egypt</p>
+              <p>info@sedia-furniture.com</p>
+              <p>(02) 25192589</p>
+              <p>(01) 000337906</p>
+            </div>
+            <div class="form col-lg-9">
+              <h2>Say hello!</h2>
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <br />
+              <textarea rows="10" placeholder="Message"></textarea>
+              <button>Send Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13824.452187546643!2d31.2796764!3d29.976181!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c302adc4ca8fcfb!2sSedia%20Furniture!5e0!3m2!1sen!2seg!4v1626982993234!5m2!1sen!2seg"
+        width="100%"
+        height="300px"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img
+              src="http://www.sedia-furniture.com/images/footer-logo.png"
+              alt="Image footer"
+            />
+            <p>
+              Sedia Furniture , is manufacturer of fine classic and contemporary
+              furniture to the most established and innovative italian and
+              european furniture designers with combination of exceptional
+              quality.
+            </p>
+          </div>
+          <div class="col">
+            <h3>Subscribe</h3>
+            <div class="inputContainer">
+              <i class="fas fa-long-arrow-alt-right icon"></i>
+              <input class="Field" type="text" />
+            </div>
+            <p>Subscribe to receive all our new.</p>
+          </div>
+          <div class="col links">
+            <h3>Explore</h3>
+            <a href="">Inside Us</a>
+            <a href="">Filker</a>
+            <a href="">Google</a>
+            <a href="">Forum</a>
+          </div>
+          <div class="col links">
+            <h3>Support</h3>
+            <a href="">Contact Us </a>
+            <a href="">Market Blog</a>
+            <a href="">Help Center</a>
+            <a href="">Pressroom</a>
+          </div>
+        </div>
+        <p class="copyright">
+          &copy; 2021 <span>Sedia</span> All Right Reserved <br />
+          by Khaled Sharaf
+        </p>
+      </div>
+    </section>
+    <span class="back-top show"><i class="fas fa-arrow-up"></i></span>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
