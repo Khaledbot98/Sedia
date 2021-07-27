@@ -22,7 +22,9 @@ section h2 {
 
 section .devider {
   margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
+  width: 100%;
 }
 
 section .devider i {
@@ -123,7 +125,7 @@ nav {
   animation: pulse; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
   background: #f4f7f9;
-  padding: 60px;
+  /* padding: 60px; */
 }
 
 .services .container {
@@ -133,7 +135,11 @@ nav {
   animation-duration: 2s;
 }
 
-.services .container i {
+/* .services .container .row .col {
+  margin: 0 auto 30px;
+} */
+
+.services .container .fa {
   font-size: 25px;
   border: 1px solid #8b0110;
   border-radius: 50%;
@@ -154,7 +160,7 @@ nav {
 
 /* Start About Us */
 .about {
-  padding: 70px;
+  /* padding: 70px; */
   animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s;
 }
@@ -208,8 +214,10 @@ nav {
 
 .gallery .imgs-container .box:hover .caption {
   bottom: 0;
-  animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s;
+  padding: 25px;
+  /* animation: zoomIn;  */
+  /* referring directly to the animation's @keyframe declaration */
+  /* animation-duration: 2s; */
 }
 
 .gallery .imgs-container .box:hover img {
@@ -229,7 +237,7 @@ nav {
   padding: 5px;
   background-color: #8b0110;
   transition: 0.5s;
-  bottom: -100%;
+  /* bottom: -100%; */
   text-align: center;
 }
 
@@ -497,15 +505,45 @@ nav {
 /* Media  */
 /* Tablet */
 @media (min-width: 768px) {
-  /* .carousel-caption h5 {
-    font-size: 25px;
+  .services .container .row .col {
+    margin: 0 auto 30px;
+  }
+
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* .gallery .imgs-container .box:hover .caption {
+    bottom: -10px;
+    padding: 15px;
   } */
 }
 
 /* Mobile */
-@media (max-width: 767px) {
+@media (min-width: 320px), (min-width: 480px) {
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .carousel-caption h5 {
     font-size: 25px;
+  }
+
+  .services .container .row .col {
+    margin: 0 auto 30px;
+  }
+
+  .gallery .imgs-container .box .caption {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    transition: 0.5s;
+    /* bottom: -100%; */
+    text-align: center;
   }
 
   .gallery .imgs-container .box .caption h4,
